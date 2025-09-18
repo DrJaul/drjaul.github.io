@@ -2,15 +2,162 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Site Directory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software Project Directory | DrJaul</title>
   <meta name="google-adsense-account" content="ca-pub-7896945483758478">
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 45%, #0ea5e9 100%);
+      --card-bg: rgba(15, 23, 42, 0.85);
+      --text-color: #f8fafc;
+      --muted-text: #cbd5f5;
+      --accent: #38bdf8;
+      --accent-hover: #0ea5e9;
+      color-scheme: light dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.5rem;
+    }
+
+    main {
+      width: min(720px, 100%);
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border-radius: 24px;
+      padding: 3rem;
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+    }
+
+    h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      margin: 0 0 1.5rem;
+      font-size: 1.35rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #e2e8f0;
+    }
+
+    p.lead {
+      margin: 0 0 2rem;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: var(--muted-text);
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 1rem;
+    }
+
+    a.project-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.25rem;
+      border-radius: 16px;
+      background: rgba(148, 163, 184, 0.12);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      color: inherit;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+    }
+
+    a.project-link::before {
+      content: "→";
+      font-size: 1.2rem;
+      color: var(--accent);
+      transition: transform 160ms ease;
+    }
+
+    a.project-link:hover,
+    a.project-link:focus-visible {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+      box-shadow: 0 14px 30px rgba(14, 165, 233, 0.3);
+      outline: none;
+    }
+
+    a.project-link:hover::before,
+    a.project-link:focus-visible::before {
+      transform: translateX(4px);
+      color: var(--accent-hover);
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.95rem;
+      color: rgba(226, 232, 240, 0.75);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    footer span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1.5rem;
+      }
+
+      main {
+        padding: 2rem;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
 </head>
 <body>
   <main>
-    <h1>Site Directory</h1>
+    <h1>Welcome to My Software Portfolio</h1>
+    <p class="lead">Explore the projects I build to solve real problems, experiment with new technologies, and showcase the craft I bring to software development. Dive in and discover how I design, code, and deliver impactful digital solutions.</p>
+    <h2>Live Projects</h2>
     <ul>
-      <li><a href="https://drjaul.github.io/Cyberdeck">Cyberdeck Configuration Helper</a></li>
+      <li><a class="project-link" href="https://drjaul.github.io/Cyberdeck">Cyberdeck Configuration Helper</a></li>
+      <li><a class="project-link" href="https://github.com/DrJaul/AITree">AITree</a></li>
+      <li><a class="project-link" href="https://github.com/DrJaul/AITreeDisplay">AITreeDisplay</a></li>
+      <li><a class="project-link" href="https://github.com/DrJaul/drjaul.github.io">Portfolio Website (drjaul.github.io)</a></li>
+      <li><a class="project-link" href="https://github.com/DrJaul/neuroConstruct">neuroConstruct</a></li>
     </ul>
+    <footer>
+      <span>Building bold solutions with precision.</span>
+      <span>&copy; <span id="year"></span> DrJaul</span>
+    </footer>
   </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
