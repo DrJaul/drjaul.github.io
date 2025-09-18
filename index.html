@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Software Project Directory | DrJaul</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software Project Directory | DrJaul</title>
   <meta name="google-adsense-account" content="ca-pub-7896945483758478">
   <style>
     :root {
@@ -54,6 +56,14 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #e2e8f0;
+    }
+
+    h3 {
+      margin: 2rem 0 1rem;
+      font-size: 1.05rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
     }
 
     p.lead {
@@ -144,8 +154,14 @@
     <h1>Welcome to My Software Portfolio</h1>
     <p class="lead">Explore the projects I build to solve real problems, experiment with new technologies, and showcase the craft I bring to software development. Dive in and discover how I design, code, and deliver impactful digital solutions.</p>
     <h2>Live Projects</h2>
+    <h1>Welcome to My Software Portfolio</h1>
+    <p class="lead">Explore the projects I build to solve real problems, experiment with new technologies, and showcase the craft I bring to software development. Dive in and discover how I design, code, and deliver impactful digital solutions.</p>
+    <h2>Live Projects</h2>
     <ul>
       <li><a class="project-link" href="https://drjaul.github.io/Cyberdeck">Cyberdeck Configuration Helper</a></li>
+    </ul>
+    <h3>Source Code</h3>
+    <ul>
       <li><a class="project-link" href="https://github.com/DrJaul/AITree">AITree</a></li>
       <li><a class="project-link" href="https://github.com/DrJaul/AITreeDisplay">AITreeDisplay</a></li>
       <li><a class="project-link" href="https://github.com/DrJaul/drjaul.github.io">Portfolio Website (drjaul.github.io)</a></li>
@@ -155,7 +171,14 @@
       <span>Building bold solutions with precision.</span>
       <span>&copy; <span id="year"></span> DrJaul</span>
     </footer>
+    <footer>
+      <span>Building bold solutions with precision.</span>
+      <span>&copy; <span id="year"></span> DrJaul</span>
+    </footer>
   </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
