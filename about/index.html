@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Project Directory</title>
+  <meta name="description" content="Learn how Project Directory curates tools, privacy practices, and community guidelines for players and makers led by Alex Likos.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inter+Tight:wght@600;700&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/consent.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span>Project Directory</span>
+          <span>Tools by Alex Likos</span>
+        </span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/projects/">Projects</a>
+        <a href="/about/" aria-current="page">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <section class="section">
+      <h1>About Project Directory</h1>
+      <p>Project Directory is Alex Likos’ workshop for publishing thoughtful tabletop helpers, experimental prototypes, and classroom-ready explainers. The site focuses on transparency: every tool highlights what data stays on your device, why the app exists, and how it supports storytelling at the table.</p>
+      <p>Alex approaches new releases with three principles. First, valuable content matters; each page ships with original documentation so players can learn quickly without copying from licensed books. Second, accessibility guides design choices, including high-contrast palettes, keyboard-friendly modals, and mobile-ready layouts. Third, privacy is non-negotiable. Tools operate offline whenever possible, with optional analytics or ads gated behind explicit consent.</p>
+      <p>As Project Directory grows, you can expect release notes, practical tips, and links to community contributions. Feedback helps steer priorities, so feel free to reach out through the contact page or open an issue in the linked repositories.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="inner">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/projects/">Projects</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms</a>
+        <a href="#" data-open-consent="true">Privacy choices</a>
+      </nav>
+      <p class="footer-note">© 2025 Alex Likos. This is a fan-made tools site. No copyrighted text from third-party publications is reproduced.</p>
+    </div>
+  </footer>
+
+  <div class="consent-banner" role="dialog" aria-modal="true" aria-hidden="true" aria-live="polite">
+    <div class="consent-inner">
+      <h3>We value your privacy</h3>
+      <p>Project Directory uses cookies and localStorage to remember tool settings. Google may use cookies to personalize or measure ads if you give consent. You can update your choice at any time.</p>
+      <div class="consent-actions">
+        <button type="button" class="primary" data-consent-action="accept">Accept all</button>
+        <button type="button" class="secondary" data-consent-action="reject">Reject all</button>
+        <button type="button" data-consent-action="manage">Manage choices</button>
+      </div>
+      <div class="consent-manage-panel" aria-hidden="true" style="display:none;">
+        <p>Choose which categories you want to allow. Your selection is stored locally and can be changed from the footer link.</p>
+        <div class="consent-options">
+          <div class="consent-option">
+            <label for="about-consent-ad-storage">Ad storage (required for showing ads)</label>
+            <input type="checkbox" id="about-consent-ad-storage" data-consent-key="ad_storage">
+          </div>
+          <div class="consent-option">
+            <label for="about-consent-ad-user-data">Ad user data (helps tailor ads)</label>
+            <input type="checkbox" id="about-consent-ad-user-data" data-consent-key="ad_user_data">
+          </div>
+          <div class="consent-option">
+            <label for="about-consent-ad-personalization">Ad personalization (customized creatives)</label>
+            <input type="checkbox" id="about-consent-ad-personalization" data-consent-key="ad_personalization">
+          </div>
+        </div>
+        <div class="consent-actions">
+          <button type="button" class="primary" data-consent-action="save">Save choices</button>
+        </div>
+        <p><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Learn more about Google ad technology</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="/assets/js/consent.js"></script>
+</body>
+</html>
