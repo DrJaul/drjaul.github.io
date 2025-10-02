@@ -267,9 +267,8 @@ footer.site-footer {
 .site-footer .inner {
   width: min(94vw, var(--max-width));
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: .5rem 0;
   display: grid;
-  gap: 1.2rem;
 }
 
 .footer-links {
@@ -281,7 +280,7 @@ footer.site-footer {
 .footer-links a {
   color: inherit;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.6rem;
 }
 
 .footer-links a:hover,
@@ -290,7 +289,7 @@ footer.site-footer {
 }
 
 .footer-note {
-  font-size: 0.85rem;
+  font-size: 0.425rem;
   line-height: 1.5;
 }
 
