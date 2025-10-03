@@ -59,7 +59,7 @@ main {
 .container {
   width: min(92vw, var(--max-width));
   margin: 0 auto;
-  padding: 1.5rem 0 2rem;
+  padding: 1rem 0 1.5rem;
 }
 
 header.site-header {
@@ -78,7 +78,7 @@ header.site-header {
   width: min(94vw, var(--max-width));
   margin: 0 auto;
   padding: 0.7rem 0;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .brand {
@@ -140,14 +140,14 @@ nav.primary-nav a[aria-current="page"] {
 }
 
 .hero {
-  padding: 3rem 0 1.5rem;
+  padding: 2rem 0 1rem;
   text-align: center;
 }
 
 .hero h1 {
   font-family: var(--font-heading);
   font-size: clamp(2.2rem, 4vw + 0.8rem, 3.4rem);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
   letter-spacing: 0.03em;
 }
 
@@ -159,27 +159,27 @@ nav.primary-nav a[aria-current="page"] {
 }
 
 .section {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .section h2 {
   font-family: var(--font-heading);
   letter-spacing: 0.02em;
   font-size: 1.8rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .grid {
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.4rem;
+  gap: 1rem;
 }
 
 .card {
   background: rgba(16, 26, 38, 0.92);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.25rem;
+  padding: 1rem;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
@@ -207,7 +207,7 @@ nav.primary-nav a[aria-current="page"] {
 
 .card .actions .tags {
   width: 100%;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .tag {
@@ -316,14 +316,14 @@ footer.site-footer {
   width: min(860px, 92vw);
   max-height: 90vh;
   overflow-y: auto;
-  padding: 1.75rem;
+  padding: 1.5rem;
 }
 
 .modal header {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  gap: 0.8rem;
+  gap: 0.7rem;
 }
 
 .modal header h3 {
@@ -342,20 +342,20 @@ footer.site-footer {
 }
 
 .modal .content {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   display: grid;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .modal .content section h4 {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
   font-size: 1rem;
   font-family: var(--font-heading);
 }
 
 .ad-container {
-  margin-top: 2rem;
-  padding: 1.25rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
   border-radius: var(--radius);
   border: 1px dashed rgba(255, 255, 255, 0.18);
   background: rgba(10, 20, 30, 0.75);
@@ -371,7 +371,7 @@ footer.site-footer {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.25rem 0;
+  margin: 1rem 0;
 }
 
 table th,
@@ -396,11 +396,11 @@ h2 + p {
 
 @media (max-width: 720px) {
   .hero {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
   }
 
   .modal-dialog {
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 1rem;
   }
 
   .card {
